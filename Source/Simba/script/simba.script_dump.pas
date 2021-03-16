@@ -298,6 +298,9 @@ begin
   Write('function Dec(var X: Ordinal; Amount: SizeInt): Ordinal; overload; external;');
   Write('function Ord(X: Ordinal): Int32; external;');
   Write('function WaitUntil(Condition: Expression; Interval, Timeout: Int32): Boolean; external;');
+  Write('procedure AddOnTerminate(Proc: procedure); overload; external;');
+  Write('procedure AddOnTerminate(Proc: procedure of object); overload; external;');
+  Write('procedure AddOnTerminate(ProcName: String); overload; external;');
 
   Section := 'Types';
 
